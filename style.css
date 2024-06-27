@@ -1,0 +1,90 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./background-images-for-login-form-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:center ;
+  }
+  
+  /* Container Styles */
+  #auth_container,
+  #user_container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+   
+ 
+  }
+  
+  #auth_container h1,
+  #user_container h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  #auth_container input,
+  #user_container input,
+  #auth_container button,
+  #user_container button {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #auth_container button,
+  #user_container button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #auth_container button:hover,
+  #user_container button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #auth_container.hide,
+  #user_container.hide {
+    display: none;
+    opacity: 0;
+  }
+  .logout{
+    background-color: rgba(207, 33, 33, 0.719);
+  }
+  
+  
